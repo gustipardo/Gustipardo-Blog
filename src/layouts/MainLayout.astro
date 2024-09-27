@@ -1,21 +1,20 @@
 ---
-import BaseHead from "@/components/BaseHead.astro"
+import BaseHead from "@/components/BaseHead.astro";
 interface Props {
-    title: string
+    title: string;
 }
-const {title} = Astro.props
+const { title } = Astro.props;
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
     <BaseHead title={title} />
-    <body class="bg-dark-blue">
+    <body class="bg-dark-blue py-4">
         <div>
             <main>
                 <slot />
             </main>
-            <footer>
-
-            </footer>
+            <footer></footer>
         </div>
     </body>
 </html>
