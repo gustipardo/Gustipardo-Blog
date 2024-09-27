@@ -15,3 +15,4 @@ Hay que precargar las fuentes
 
 Tiene Taildwind
 
+astro sync para actualizar los tipos de las coleccioens
