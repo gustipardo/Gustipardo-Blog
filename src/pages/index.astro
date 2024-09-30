@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content";
 import MainLayout from "@/layouts/MainLayout.astro";
 import { Image } from "astro:assets";
-import ArticleList from "@/layouts/ArticleList.astro";
 import Article from "@/components/Article.astro";
 
 const posts = (await getCollection("blog"))
