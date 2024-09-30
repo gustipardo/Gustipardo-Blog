@@ -27,6 +27,6 @@ En astro Config se estan importando todos los iconos, cuando se termine el proye
 
 Si se crea un nuevo blog en este proyecto se debe modificar el path de la imagen en BaseHead.astro y el description
     
-Deploy waring: Astro.config.msj tiene la url del host, si se cambia la url de host se debe modificar tambien
+Deploy waring: Astro.config.msj tiene la url del host, si se cambia la url de host se debe modificar tambien 
 
-En pages/rss.xml.js se debe modificar si se quiere usar el proyecto
+En pages/rss.xml.js se debe modificar si se quiere usar el proyecto :check

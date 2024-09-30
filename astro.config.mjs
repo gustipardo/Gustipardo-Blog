@@ -11,7 +11,7 @@ import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://localhost:4321",
+  site: import.meta.env.PUBLIC_HOST_URL,
   integrations: [tailwind(), icon({
     include: {
       lucide: ["*"]

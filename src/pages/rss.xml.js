@@ -4,9 +4,9 @@ export async function GET(context) {
 const posts = await getCollection("blog");
   return rss({
     // `<title>` campo en el xml generado
-    title: 'Blog de Astro',
+    title: 'Gustipardo Blog',
     // `<description>` campo en el xml generado
-    description: 'Mi super cool blog de astro',
+    description: 'Mi blog personal donde comparto experiencias, pensamientos y logros',
     // Usa el "site" desde el contexto del endpoint
     // https://docs.astro.build/en/reference/api-reference/#contextsite
     site: context.site,
