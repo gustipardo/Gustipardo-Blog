@@ -44,7 +44,7 @@ import "@/styles/blog.css";
                     <div class="flex flex-wrap gap-2">
                         {
                             tags.map((tag) => (
-                                <span class="bg-gray-800 rounded-full px-3 pt-1 pb-0.5 text-sm text-white">
+                                <span class="bg-orange-500 rounded-full px-3 pt-1 pb-0.5 text-sm text-white ">
                                     {tag}
                                 </span>
                             ))
@@ -53,7 +53,7 @@ import "@/styles/blog.css";
 
                     <h1 class="border-none my-2 p-0">{title}</h1>
                     <FormattedDate date={pubDate} />
-                    <hr />
+                    <hr class="mt-2" />
                     <slot />
                 </div>
             </article>
