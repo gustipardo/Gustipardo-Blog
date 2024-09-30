@@ -1,63 +1,88 @@
 ---
 title: "My Four Post"
-pubDate: "Jul 01 2022"
-heroImage: "/assets/placeholder-post1.jpg"
+pubDate: "Jul 01 2024"
+heroImage: "/assets/myheadshot2_crop.webp"
 tags: ["AI", "Dev"]
 ---
 import TagSelector from "@/components/TagSelector.astro";
 
-#{frontmatter.title}
-
-# An h1 header
-
-Paragraphs are separated by a blank line.
-
-<TagSelector />
-
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
-
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
+asdasda
 
 
-## An h2 header
+Este es el párrafo introductorio para el post. Aquí puedes proporcionar una descripción general del tema que vas a tratar.
 
-Here's a numbered list:
+---
+sisi
+### Título Secundario (H3)
 
+Aquí empezamos a desglosar más el contenido. A continuación, veremos algunos elementos básicos de formato:
 
+### Título Terciario (H3)
 
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
+Este es un subtítulo de tercer nivel para secciones más específicas. Vamos a incluir algunos ejemplos de texto:
 
+- **Texto en Negrita**: Puedes usar **negrita** para resaltar palabras importantes.
+- *Texto en Cursiva*: También puedes usar *cursiva* para poner énfasis.
+- ~~Texto Tachado~~: Si necesitas corregir algo, usa ~~tachado~~.
 
+#### Título Cuaternario (H4)
 
-### An h3 header
+Ejemplo de listas:
 
-Now a nested list:
+#### Lista Desordenada:
 
-1.  First, get these ingredients:
+- Primer elemento
+- Segundo elemento
+  - Sub-elemento 1
+  - Sub-elemento 2
+- Tercer elemento
 
-    - carrots
-    - celery
-    - lentils
+#### Lista Ordenada:
 
-2.  Boil some water.
+1. Primer paso
+2. Segundo paso
+   1. Sub-paso A
+   2. Sub-paso B
+3. Tercer paso
 
-3.  Dump everything in the pot and follow
-    this algorithm:
+---
 
-        find wooden spoon
-        uncover pot
-        stir
-        cover pot
-        balance wooden spoon precariously on pot handle
-        wait 10 minutes
-        goto first step (or shut off burner when done)
+## Citas y Código (H2)
 
-    Do not bump wooden spoon or it will fall.
+A continuación, una cita famosa y un bloque de código:
 
-Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above).
+> "La imaginación es más importante que el conocimiento." – Albert Einstein
+
+```python
+# Ejemplo de código en Python
+def saludo():
+    mensaje = "¡Hola Mundo!"
+    print(mensaje)
+```
+
+# Ejemplo Completo de Markdown
+
+Aquí encontrarás todos los elementos de la sintaxis extendida de Markdown.
+
+## Texto y Listas
+
+**Texto en Negrita**  
+*Texto en Cursiva*  
+~~Texto Tachado~~
+
+- [x] Esta es una tarea completada
+- [ ] Esta es una tarea pendiente
+
+1. Primer ítem numerado
+2. Segundo ítem numerado
+
+---
+
+## Bloques de Código y Tablas
+
+```json
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}

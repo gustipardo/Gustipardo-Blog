@@ -4,25 +4,39 @@ const tags = await getAllTags();
 import { Icon } from "astro-icon/components";
 ---
 
-<div class="flex gap-3">
+<div class="flex gap-3 items-center">
+    <!-- Botón de apertura -->
     <span
         id="opener"
-        class="w-12 h-12 rounded-full grid place-items-center border border-zinc-700 cursor-pointer"
+        class="w-16 h-12 rounded-full grid place-items-center border border-orange-400 bg-orange-500 hover:bg-orange-400 transition-all cursor-pointer shadow-md"
     >
-        <Icon class="text-white text-2xl" name="lucide:list-filter" />
+        <Icon class="text-white text-3xl" name="lucide:list-filter" />
     </span>
-    <div id="selector" class="opacity-0 transition-opacity">
+
+    <!-- Selector de tags (con animación de opacidad) -->
+    <div
+        id="selector"
+        class="opacity-0 transition-opacity duration-300 ease-in-out"
+    >
         {
             tags.map((tag) => (
                 <a href={`/blog/tag/${tag.toLocaleLowerCase()}`}>
-                    <span class="border-extra-soft-white mt-4 self-start rounded border px-2 py-1 text-zinc-400">
+                    <span class="inline-block border mt-4 rounded-md border-orange-500 px-3 py-1 bg-white text-black hover:bg-orange-500 hover:text-white transition-colors duration-200 ease-in-out shadow-sm">
                         {tag}
                     </span>
                 </a>
             ))
         }
+        <a href="/blog">
+            <span
+                class="inline-block border mt-4 rounded-md border-orange-500 px-3 py-1 bg-white text-black hover:bg-orange-500 hover:text-white transition-colors duration-200 ease-in-out shadow-sm"
+            >
+                Ningún filtro
+            </span>
+        </a>
     </div>
 </div>
+
 <script data-astro-rerun>
     document.getElementById("opener")?.addEventListener("click", () => {
         const selector = document.getElementById("selector");

@@ -1,8 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import MainLayout from "@/layouts/MainLayout.astro";
 import Article from "@/components/Article.astro";
-import TagSelector from "@/components/TagSelector.astro";
 import ArticleList from "@/layouts/ArticleList.astro";
 const posts = (await getCollection("blog")).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),

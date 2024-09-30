@@ -7,37 +7,39 @@ type Props = CollectionEntry<"blog">["data"] & { slug: string };
 const { heroImage, title, tags, pubDate, slug } = Astro.props;
 ---
 
-<li
-    class="border-extra-soft-white text-soft-white hover:bg-soft-light rounded-xl border transition-colors duration-200"
->
-    <div transition:name={title}>
-        <article>
-            <a href={`/blog/${slug}`}>
-                <Image
-                    src={heroImage}
-                    alt=""
-                    width={1020}
-                    height={520}
-                    class="aspect-[16/5] rounded-t-xl object-cover"
-                />
-                <div class="w-full">
-                    <div class="flex flex-col px-12 py-4">
-                        <h4 class="text-3xl font-bold">
-                            {title}
-                        </h4>
-                        <div class="flex gap-2">
-                            {
-                                tags.map((tag) => (
-                                    <span class="border-extra-soft-white mt-4 self-start rounded border px-2 py-1 text-zinc-400">
-                                        {tag}
-                                    </span>
-                                ))
-                            }
-                        </div>
-                        <FormattedDate date={pubDate} />
+<div class="relative group w-full">
+    <!-- Cambia ul por div -->
+    <article>
+        <a href={`/blog/${slug}`} class="block">
+            <Image
+                src={heroImage}
+                alt={title}
+                width={1020}
+                height={1020}
+                class="w-full h-64 object-cover rounded-xl"
+            />
+            <!-- Contenedor con el degradado negro menos intenso -->
+            <div
+                class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent px-4 py-4 text-white rounded-xl"
+            >
+                <div>
+                    <div class="flex flex-wrap gap-2">
+                        {
+                            tags.map((tag) => (
+                                <span class="bg-orange-500 rounded-full px-3 pt-1 pb-0.5 text-sm text-white ">
+                                    {tag}
+                                </span>
+                            ))
+                        }
                     </div>
+                    <h2 class="text-2xl font-bold text-white text-shadow-md">
+                        {title}
+                    </h2>
+                    <span class="block text-sm">
+                        <FormattedDate date={pubDate} />
+                    </span>
                 </div>
-            </a>
-        </article>
-    </div>
-</li>
+            </div>
+        </a>
+    </article>
+</div>

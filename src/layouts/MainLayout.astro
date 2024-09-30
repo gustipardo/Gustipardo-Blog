@@ -1,5 +1,7 @@
 ---
 import BaseHead from "@/components/BaseHead.astro";
+import Nav from "@/components/Nav.astro";
+import { Icon } from "astro-icon/components";
 interface Props {
     title: string;
 }
@@ -9,12 +11,23 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
     <BaseHead title={title} />
-    <body class="bg-dark-blue py-4">
-        <div>
+    <body class="bg-white p-0">
+        <Nav />
+        <div class="py-4">
             <main>
                 <slot />
             </main>
-            <footer></footer>
+            <footer class="py-4 flex justify-center items-center">
+                <a
+                    href="https://instagram.com/gusalvarez0"
+                    class="flex items-center text-gray-700 hover:no-underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Icon class="text-2xl mr-2" name="lucide:instagram" />
+                    @gusalvarez0
+                </a>
+            </footer>
         </div>
     </body>
 </html>

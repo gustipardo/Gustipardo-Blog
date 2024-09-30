@@ -1,0 +1,46 @@
+---
+// library imports
+
+// component imports
+
+// data imports
+import navData from "@/data/navData";
+import { Icon } from "astro-icon/components";
+---
+
+<nav
+    aria-label="Primary"
+    class="bg-white text-gray-800 border-b-4 border-orange-500 shadow-md"
+>
+    <div
+        class="navbar flex justify-between items-center px-6 py-4 max-h-[64px]"
+    >
+        <!-- Logo -->
+        <a
+            href="/"
+            class="logomark text-2xl font-bold hover:text-orange-400 text-orange-500 hover:no-underline transition duration-200"
+            aria-label="Go home"
+        >
+            Gustipardo
+        </a>
+
+        <!-- Navigation Links -->
+        <ul class="flex space-x-6">
+            {
+                navData.map((item) => (
+                    <a
+                        href={item.path}
+                        class="text-orange-500 hover:text-orange-400  px-4 py-2 rounded-md text-lg hover:no-underline  font-medium transition duration-200"
+                        data-navLink
+                    >
+                        {item.name}
+                    </a>
+                ))
+            }
+        </ul>
+    </div>
+</nav>
+
+<script>
+    import "@/js/nav.js";
+</script>
