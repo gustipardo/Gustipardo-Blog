@@ -11,10 +11,10 @@ import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
-  site: import.meta.env.PUBLIC_HOST_URL,
+  site: "https://gustipardo-blog.vercel.app",
   integrations: [tailwind(), icon({
     include: {
-      lucide: ["*"]
+      lucide: ["instagram", "list-filter"]
     }}
   ), sitemap(), mdx()]
 });
