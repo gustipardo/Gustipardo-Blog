@@ -2,7 +2,7 @@
 title: "My Four Post"
 pubDate: "Jul 01 2024"
 heroImage: "/assets/myheadshot2_crop.webp"
-tags: ["AI", "Dev"]
+tags: ["Experiencias", "Bitácora de Progreso", "Perspectivas y Pensamientos"]
 ---
 import TagSelector from "@/components/TagSelector.astro";
 
@@ -28,6 +28,8 @@ Este es un subtítulo de tercer nivel para secciones más específicas. Vamos a 
 #### Título Cuaternario (H4)
 
 Ejemplo de listas:
+
+<TagSelector />
 
 #### Lista Desordenada:
 

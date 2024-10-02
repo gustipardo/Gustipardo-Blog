@@ -1,0 +1,96 @@
+---
+title: "Control sobre Redes Sociales"
+pubDate: "oct 02 2024"
+heroImage: "/blog/Como-recuperar-el-control-sobre-el-consumo-de-redes-sociales/DoomScrolling.webp"
+tags: ["Pensamientos"]
+---
+import { PieChartComponent } from "@/components/PieChartComponent";
+
+
+export const chartData = [
+    { browser: "dormir", horas: 8, fill: "var(--color-azul)" },
+    { browser: "comer", horas: 1.5, fill: "var(--color-rojo)" },
+    { browser: "trabajo", horas: 8, fill: "var(--color-naranja)" },
+    { browser: "redes_sociales", horas: 2.5, fill: "var(--color-verde)" },
+    { browser: "hobbies", horas: 2, fill: "var(--color-purpura)" },
+    { browser: "transporte", horas: 2, fill: "var(--color-marron)" },
+]
+
+export const chartConfig = {
+    horas: {
+        label: "Horas",
+    },
+    comer: {
+        label: "Comer",
+        color: "hsl(var(--chart-4))",
+    },
+    dormir: {
+        label: "Dormir",
+        color: "hsl(var(--chart-1))",
+    },
+    trabajo: {
+        label: "Trabajo",
+        color: "hsl(var(--chart-2))",
+    },
+    redes_sociales: {
+        label: "Redes Sociales",
+        color: "hsl(var(--chart-3))",
+    },
+    hobbies: {
+        label: "Hobbies",
+        color: "hsl(var(--chart-5))",
+    },
+    transporte: {
+        label: "Transporte",
+        color: "hsl(var(--chart-5))",
+    },
+}
+
+
+Muchos ya están especulando cómo la IA nos va a afectar en el futuro, cuando la realidad es que ya estamos siendo afectados por ella.
+
+¿Alguna vez te encontraste scrolleando en una red social con el mero motivo de "abstraerte", de desconectarte un rato?  
+¿Levantas el celular y abres una red social como TikTok, Instagram o YouTube por impulso y memoria muscular?  
+¿Has notado que algunas aplicaciones, con solo abrirlas, ya te muestran videos y te atrapan en el denominado "Doom Scrolling"?
+
+Las redes sociales contienen algoritmos diseñados con el único objetivo de mantenerte la mayor cantidad de tiempo posible en la aplicación, porque es lo más rentable para las empresas. Estos algoritmos están entrenados a partir de tu tiempo en la app; analizan qué videos retienen más tu atención, cuáles miras por más tiempo, y te clasifican en una burbuja de contenido, siempre adaptándose a tus gustos e intereses.
+
+Esto provoca los síntomas que he mencionado: parte de nuestro limitado tiempo se desperdicia en el consumo inconsciente, inhibiendo el descubrimiento de temas diferentes a los que consumimos normalmente.
+
+Según estadísticas de la página Smart Insights, el consumo promedio de redes sociales es de 2 horas y 23 minutos al día. Esto representa el 15.6% de nuestras horas productivas (asumiendo un día productivo de 16 horas). Sin embargo, esas dos horas y media no son una forma efectiva de descanso. Es común sentirse agotado después de una sesión de scrolling, ya que nuestro sistema dopaminérgico se satura con el contenido breve y constante. Como resultado, actividades posteriores carecen de motivación o disfrute. Por lo tanto, si utilizas este consumo excesivo de redes como excusa para "descansar", lamento informarte que no es un método efectivo para hacerlo.
+
+<PieChartComponent
+    title="Distribución de Horas en un Día"
+    description="Horas invertidas en 24 horas"
+    chartData={chartData}
+    chartConfig={chartConfig}
+    dataKey="horas"
+    nameKey="browser"
+    footerText="Este es un ejemplo hipotético de cómo se distribuyen las horas en un día."
+    client:load
+/>
+
+Si te identificas con esta problemática, te compartiré lo que hice para corregir este mal hábito. Tomando como referencia el libro *Hábitos Atómicos*, cuando uno quiere adquirir un nuevo hábito, debe hacer que su entorno facilite la ejecución de la acción. En el caso de un mal hábito, es la misma lógica: debemos buscar que realizar ese mal hábito sea lo más incómodo y difícil posible. De esta manera, no dependeremos de nuestra fuerza de voluntad, la cual muchas veces no es confiable.
+
+> "La automotivación solo llega hasta cierto punto. Es más fácil no dejarse llevar por la distracción si el ambiente no la fomenta. Cuando decides lo que te rodea, puedes decidir tus hábitos." — James Clear, Hábitos Atómicos
+
+
+
+He probado aplicaciones que limitan el tiempo en la app o que directamente no te permiten abrirla, pero increíblemente no me funcionaron. Con el tiempo, terminé desinstalando la app que bloqueaba y recaí nuevamente en el mal hábito.
+
+Aquí te compartiré los pasos que logré ejecutar de manera progresiva, a lo largo de más de un año, para reducir al mínimo el consumo pasivo de redes sociales:
+
+🎹 **Desinstalé TikTok:** Es la aplicación que posee el mejor algoritmo de recomendación y la que menos valor aporta de todas.
+
+📷 **Desinstalé Instagram:** Desafortunadamente, no encontré la forma de quedarme con la parte social de la app (como ver historias y publicaciones de amigos) sin que los reels y publicaciones populares me engancharan nuevamente. Intenté instalar versiones antiguas de Instagram, pero no sirvió de nada.
+
+🎥 **Borré y desactivé el historial de YouTube:** Esto provoca que YouTube no tenga ni obtenga contenido de referencia para brindarte recomendaciones. Así, en tu página de inicio y en la sección de shorts no aparecerá ningún video. Solo dispondrás de la barra de búsqueda y los videos de los canales a los que estés suscrito. Recomiendo que evalúes a qué canal te conviene seguir suscrito. De esta forma, YouTube se convierte en una herramienta de investigación, y tendrás más control sobre qué videos quieres que te muestre y cuáles no.
+
+Si bien al principio hay un sentimiento de "me voy a perder algo nuevo", al cabo de unos días notarás que todo sigue igual. Serás más consciente de dónde inviertes tu tiempo, y tu consumo de contenido será más activo, ya que te verás obligado a pensar qué es lo que realmente quieres ver antes de entrar a un video.
+
+Otras personas logran entrenar al algoritmo para que les recomiende temas que les aportan valor en sus vidas. En mi caso, no opté por esta opción, ya que mientras el algoritmo tenga como objetivo retener tu atención, siempre estarás en una constante lucha contra él.
+
+Ya transcurrido mas de un año desde que empecé a ejecutar estos pasos debo admitir que cada cierto tiempo (2 o 3 semanas) vuelvo a instalar Instagram lite, miro las historias de las personas a las que sigo y incluso miro algunos reels pero inmediatamente que termino de usar la app la desinstalo. Hoy puedo afirmar que mi consumo de redes ha disminuido brutalmente, no sufro de Doom Scrolling y tampoco tengo ningún sentimiento de pérdida sobre no estar enterado de las últimas tendencias o novedades, si es algo importante te terminas enterando igual.
+
+Espero haber logrado que evalúes como estas invirtiendo tu tiempo y que la información presentada te haya sido útil.
+Los cambios requieren tiempo, atención y esfuerzo.

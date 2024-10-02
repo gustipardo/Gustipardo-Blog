@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import MainLayout from "@/layouts/MainLayout.astro";
 import { Image } from "astro:assets";
 import Article from "@/components/Article.astro";
+import { PieChartComponent } from "@/components/PieChartComponent";
 
 const posts = (await getCollection("blog"))
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
@@ -24,16 +25,16 @@ const posts = (await getCollection("blog"))
 		<div class="content md:ml-8 text-center md:text-left">
 			<h1 class="text-3xl font-bold">My Blog</h1>
 			<p class="text-gray-700 mt-2 mb-4">
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-				Aperiam quidem tempora beatae mollitia architecto optio sapiente
-				repellendus natus.
+				Mi nombre Gustavo Martin Alvarez y en este blog guardo cada
+				aspecto relevante de mi existencia; mis pensamientos, logros y
+				experiencias.
 			</p>
-			<a
+			<!-- 			<a
 				href="/about/"
 				class="bg-orange-500 text-white font-semibold py-2 px-4 rounded hover:bg-orange-600 transition duration-200"
 			>
 				👋 About Me
-			</a>
+			</a> -->
 		</div>
 	</section>
 

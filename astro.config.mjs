@@ -9,12 +9,16 @@ import sitemap from '@astrojs/sitemap';
 
 import mdx from '@astrojs/mdx';
 
+import react from '@astrojs/react';
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://gustipardo-blog.vercel.app",
-  integrations: [tailwind(), icon({
+  integrations: [tailwind({
+    applyBaseStyles: false,
+  }), icon({
     include: {
       lucide: ["instagram", "list-filter"]
     }}
-  ), sitemap(), mdx()]
+  ), sitemap(), mdx(), react()]
 });
