@@ -26,7 +26,7 @@ export const CaruselComponent: React.FC<CaruselComponentProps> = ({
     };
 
     return (
-        <Carousel className="w-10/12 md:w-1/2 mx-auto">
+        <Carousel className="w-10/12 md:w-100 mx-auto">
             <CarouselContent>
                 {imageNames.map((imageName, index) => (
                     <CarouselItem key={index}>

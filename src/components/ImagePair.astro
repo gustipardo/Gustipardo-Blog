@@ -1,0 +1,38 @@
+---
+interface Props {
+    PathFolder: string;
+    img1: string;
+    img2: string;
+}
+
+const { img1, img2, PathFolder } = Astro.props as Props;
+---
+
+<div class="image-container">
+    <img src={PathFolder + img1} alt={img1} />
+    <img src={PathFolder + img2} alt={img2} />
+</div>
+
+<style>
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 100%;
+        overflow: hidden; /* Evita el desbordamiento */
+    }
+
+    @media (min-width: 768px) {
+        .image-container {
+            flex-direction: row;
+            justify-content: center; /* Centra las imágenes en pantallas grandes */
+        }
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100vh; /* Limita la altura máxima al 100% de la altura de la ventana */
+        height: auto;
+        object-fit: contain; /* Mantiene la proporción */
+    }
+</style>

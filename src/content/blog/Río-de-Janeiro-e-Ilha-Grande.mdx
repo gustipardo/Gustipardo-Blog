@@ -5,6 +5,7 @@ heroImage: "/blog/Río-de-Janeiro-e-Ilha-Grande/atardecer-desde-Pan-de-Azucar2.w
 tags: ["Pensamientos"]
 ---
 import { CaruselComponent } from "@/components/CaruselComponent";
+import ImagePair from "@/components/ImagePair.astro";
 
 export const PedraDoArpoador = [
   "atardecer-desde-Pedra-do-Arpoador.webp",
@@ -14,10 +15,9 @@ export const PedraDoArpoador = [
 ]
 
 export const ArbolTijuca = [
-  "Arbol-de-Tijuca.webp",
-  "Arbol-de-Tijuca2.webp",
-  "Arbol-de-Tijuca3.webp",
   "Arbol-de-Tijuca4.webp",
+  "Arbol-de-Tijuca2.webp",
+  "Arbol-de-Tijuca.webp",
 ]
 
 ## Día 1: Llegada a Río de Janeiro
@@ -36,8 +36,11 @@ imageNames={PedraDoArpoador}
 aspectRatio='horizontal'
 client:visible/>
 
-![atardecer-desde-Pedra-do-Arpoador5](/blog/Río-de-Janeiro-e-Ilha-Grande/atardecer-desde-Pedra-do-Arpoador5.webp)
-![atardecer-desde-Pedra-do-Arpoador6](/blog/Río-de-Janeiro-e-Ilha-Grande/atardecer-desde-Pedra-do-Arpoador6.webp)
+<ImagePair
+  PathFolder="/blog/Río-de-Janeiro-e-Ilha-Grande/"
+  img1="atardecer-desde-Pedra-do-Arpoador5.webp"
+  img2="atardecer-desde-Pedra-do-Arpoador6.webp"
+/>
 
 Saliendo del lugar nos encontramos con un hombre esposado por la policía y un damnificado con el ojo morado, nuestra incomodidad no era erronea.
 ![Personas en Pedra do Arpoador](/blog/Río-de-Janeiro-e-Ilha-Grande/Personas-en-Pedra-do-Arpoador.webp)
@@ -51,7 +54,7 @@ Nos levantamos y disfrutamos de un gran desayuno en el hotel. Como no habíamos 
 Luego, con ayuda de Google Maps, nos dirigimos hacia el Pan de Azúcar. Nos tomó unos 40 minutos llegar en bici, con un ritmo tranquilo, y encontramos la playa Vermelha junto al Pan de Azúcar. Dejamos las bicis en la estación y nos despreocupamos al colocarlas en su estación.
 
 ![Prahia Vermelha desde Pan de Azucar](/blog/Río-de-Janeiro-e-Ilha-Grande/Prahia-Vermelha-desde-Pan-de-Azucar.webp)
-![Pan de azucar desde Praia Vermelha](/blog/Río-de-Janeiro-e-Ilha-Grande/Pan-de-azucar-desde-Praia-Vermelha.webp)
+<img src="/blog/Río-de-Janeiro-e-Ilha-Grande/Pan-de-azucar-desde-Praia-Vermelha.webp" alt="Pan de azucar desde Praia Vermelha" style="max-width: 620px; width: 100%" />
 
 
 Nos metimos al agua, aunque había algo de basura en la orilla aunque más adentro, el agua estaba limpia. Al salir, compramos dos açaí, que es como un helado al que le podes agregar banana, gomitas, confites y todo lo que se te ocurra.
@@ -61,14 +64,18 @@ Ya que estábamos ahí decidimos visitar el pan de azúcar en el teleférico, hi
 Al llegar al final de la fila, nos dimos cuenta de que no habíamos traído nuestros documentos para obtener el descuento de estudiante, pero logré usar la app de "Mi Argentina" para conseguirlo. Subimos al primer morro, donde comimos dos helados y vimos un helicóptero aterrizar en un helipuerto.
 ![Helicoptero](/blog/Río-de-Janeiro-e-Ilha-Grande/Helicoptero.webp)
 
-![pan de azucar](/blog/Río-de-Janeiro-e-Ilha-Grande/pan-de-azucar.webp)
+<ImagePair
+  PathFolder="/blog/Río-de-Janeiro-e-Ilha-Grande/"
+  img1="pan-de-azucar.webp"
+  img2="pan-de-azucar2.webp"
+/>
 
-![pan de azucar](/blog/Río-de-Janeiro-e-Ilha-Grande/pan-de-azucar2.webp)
 
 Después, subimos al segundo tramo del teleférico para llegar al Pan de Azúcar, donde esperamos unas horas para ver la puesta de sol.
 ![Atardecer desde Pan de Azucar](/blog/Río-de-Janeiro-e-Ilha-Grande/atardecer-desde-Pan-de-Azucar.webp)
 ![Atardecer desde Pan de Azucar](/blog/Río-de-Janeiro-e-Ilha-Grande/atardecer-desde-Pan-de-Azucar2.webp)
 ![Rio desde pan de azucar](/blog/Río-de-Janeiro-e-Ilha-Grande/Rio-desde-pan-de-azucar.webp)
+
 
 Ya era de noche y nos tomó más de una hora bajar debido a la cantidad de gente. No teníamos la app de Uber y no veíamos taxis, así que mi madre se empezó a sentir insegura con la idea de volver en bici. Al final, nos subimos al Uber de alguien más por error, pero luego logramos tomar un taxi hacia el hotel.
 Esa noche, cenamos junto a la playa: una tabla de carnes con música en vivo. Mi madre se tomó dos caipirinhas mientras una mujer bailaba la comparsa.
@@ -78,11 +85,17 @@ Esa noche, cenamos junto a la playa: una tabla de carnes con música en vivo. Mi
 ## Día 3: Parque Nacional de Tijuca
 Nos levantamos y fuimos de compras. Luego tomamos un taxi hacia el Parque Nacional de Tijuca. Aunque el taxista no sabía muy bien cómo llegar, finalmente lo hizo, aunque no fue barato (80 reales). Caminamos unas cinco horas en el parque y vimos tres cascadas, en las que incluso nos bañamos.
  ![Tijuca](/blog/Río-de-Janeiro-e-Ilha-Grande/Tijuca.webp)
- ![Tortuga Tijuca](/blog/Río-de-Janeiro-e-Ilha-Grande/tortuga-tijuca.webp)
- ![Puente Tijuca](/blog/Río-de-Janeiro-e-Ilha-Grande/puente-tijuca.webp)
- ![Cascada Tijuca](/blog/Río-de-Janeiro-e-Ilha-Grande/Cascada-Tijuca.webp)
- ![Cascada Tijuca](/blog/Río-de-Janeiro-e-Ilha-Grande/Cascada-Tijuca2.webp)
 
+ <ImagePair
+  PathFolder="/blog/Río-de-Janeiro-e-Ilha-Grande/"
+  img1="tortuga-tijuca.webp"
+  img2="puente-tijuca.webp"
+/>
+<ImagePair
+  PathFolder="/blog/Río-de-Janeiro-e-Ilha-Grande/"
+  img1="Cascada-Tijuca.webp"
+  img2="Cascada-Tijuca2.webp"
+/>
 
 <CaruselComponent 
 folderPath='/blog/Río-de-Janeiro-e-Ilha-Grande' 
@@ -96,7 +109,7 @@ Al volver tomamos un colectivo hasta la terminal de metro donde luego de mucha i
 Faltaba poco para ir a isla grande por lo que salimos para cambiar dólares por reales ya que no nos quedaban más, pero resulta que era feriado y las casas de cambio estaban cerradas! Madre entro en una crisis ya que las personas particulares cambiaban a una tasa injusta al igual que dentro de Isla grande, se aprovechan que estas en una isla aislado del mundo para cobrarte lo que quieran y no tener otra posibilidad que aceptar.
 Empacamos todo y encaramos a un nuevo hotel para pasar la última noche, nos equivocamos de lugar y terminamos en otro hotel pero parece que fue obra del destino ya que encontramos una casa de cambio abierta por una buena tasa de cambio! Una vez resuelto todo fuimos a pasar la tarde a la playa de Ipanema a pesar de que estaba lloviendo.
 
-![Camarones](/blog/Río-de-Janeiro-e-Ilha-Grande/camarones.webp)
+<img src="/blog/Río-de-Janeiro-e-Ilha-Grande/camarones.webp" alt="Camarones" style="max-width: 620px; width: 100%" />
 
 ## Día 5: Llegada a Ilha Grande
 El plan era utilizar una escursión por Ilha Grande como transporte a la misma, la excursion incluia la vuelta a Río pero nosotros no quedaríamos hospedando en Ilha Grande..
@@ -122,7 +135,8 @@ Al comenzar el día decidimos ir a Lópes Mendes playa muy recomendada. Tomamos 
 
 ## Día 7: Playa y Cascada Feticeira 
 Caminamos hacia nuestra primera thirlla hacia la playa y cascada Feticeira. Con una duración de aproximadamente 1 hora y 40 minutos visitamos la cascada Feticeira y su playa, en mi opinión la cascada mejor que la playa.
-![Feticeira](/blog/Río-de-Janeiro-e-Ilha-Grande/Feticeira.webp)
+<img src="/blog/Río-de-Janeiro-e-Ilha-Grande/Feticeira.webp" alt="Feticeira" style="max-width: 620px; width: 100%" />
+
 Volvimos sin mucho problema y a la noche tuvimos la mejor comida de todo el viaje, pizza de camarones. 
 ![Pizza de camarones](/blog/Río-de-Janeiro-e-Ilha-Grande/Pizza-de-camarones.webp)
 
