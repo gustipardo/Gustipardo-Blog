@@ -3,7 +3,6 @@ import { getCollection } from "astro:content";
 import MainLayout from "@/layouts/MainLayout.astro";
 import { Image } from "astro:assets";
 import Article from "@/components/Article.astro";
-import { PieChartComponent } from "@/components/PieChartComponent";
 
 const posts = (await getCollection("blog"))
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
